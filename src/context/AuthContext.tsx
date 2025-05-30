@@ -46,7 +46,7 @@ users = JSON.parse(savedUsers);
 const saveUsers = () => {
 localStorage.setItem('users', JSON.stringify(users));
 };
-const login = async (email: string, password: string) => {
+const login = async (email: string, _password: string) => {
 setLoading(true);
 setError(null);
 try {
@@ -66,7 +66,7 @@ throw err;
 setLoading(false);
 }
 };
-const register = async (email: string, password: string, name: string) => {
+const register = async (email: string, _password: string, name: string) => {
 setLoading(true);
 setError(null);
 try {

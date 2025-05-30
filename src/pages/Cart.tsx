@@ -11,7 +11,7 @@ price: number;
 quantity: number;
 onRemove: () => void;
 onUpdateQuantity: (quantity: number) => void;
-}> = ({ id, title, price, quantity, onRemove, onUpdateQuantity }) => {
+}> = ({title, price, quantity, onRemove, onUpdateQuantity }) => {
 return (
 <div className="flex items-center justify-between py-4 border-b">
 <div className="flex-1">
