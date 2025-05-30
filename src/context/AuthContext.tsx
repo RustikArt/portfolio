@@ -26,8 +26,7 @@ updateProfile: (data: Partial<User>) => Promise<void>;
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 // Simulation d'une base de données utilisateurs (à remplacer par Firebase ou autre)
 let users: User[] = [];
-export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children })
-=> {
+export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 const [user, setUser] = useState<User | null>(null);
 const [loading, setLoading] = useState(true);
 const [error, setError] = useState<string | null>(null);

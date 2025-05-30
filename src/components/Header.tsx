@@ -11,23 +11,40 @@ const Header: React.FC = () => {
           <span className="text-2xl font-bold">Portfolio Créatif</span>
         </Link>
         
-        <nav className="hidden md:flex items-center space-x-6">
-          <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">
-            Accueil
-          </Link>
-          <Link to="/about" className="text-sm font-medium transition-colors hover:text-primary">
-            À propos
-          </Link>
-          <Link to="/portfolio" className="text-sm font-medium transition-colors hover:text-primary">
-            Portfolio
-          </Link>
-          <Link to="/reviews" className="text-sm font-medium transition-colors hover:text-primary">
-            Avis
-          </Link>
-          <Link to="/contact" className="text-sm font-medium transition-colors hover:text-primary">
-            Contact
-          </Link>
-        </nav>
+<nav className="hidden md:flex items-center space-x-6">
+  <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">
+    Accueil
+  </Link>
+  <Link to="/about" className="text-sm font-medium transition-colors hover:text-primary">
+    À propos
+  </Link>
+  <Link to="/portfolio" className="text-sm font-medium transition-colors hover:text-primary">
+    Portfolio
+  </Link>
+  <Link to="/reviews" className="text-sm font-medium transition-colors hover:text-primary">
+    Avis
+  </Link>
+  <Link to="/contact" className="text-sm font-medium transition-colors hover:text-primary">
+    Contact
+  </Link>
+
+  {/* 🎯 AJOUT ICI */}
+  <Link to="/shop" className="text-sm font-medium transition-colors hover:text-primary">
+    Boutique
+  </Link>
+  <Link to="/cart" className="text-sm font-medium transition-colors hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="8" cy="21" r="1" />
+      <circle cx="19" cy="21" r="1" />
+      <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+    </svg>
+  </Link>
+</nav>
+        {/* Fin de la barre de navigation */}
+
+        {/* Bouton de mode sombre et menu mobile */}
         
         <div className="flex items-center space-x-4">
           <ModeToggle />
