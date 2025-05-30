@@ -136,4 +136,5 @@ Se connecter
 </div>
 );
 };
+
 export default Register;
