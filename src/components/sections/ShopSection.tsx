@@ -1,1 +1,0 @@
-// Section principale de la boutique
